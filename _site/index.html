@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <link rel="icon" type="image/png" href="apple-touch-icon.png">
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>Stuart Pearman - Designer</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href='http://fonts.googleapis.com/css?family=Cantata+One|Quicksand:300,400,700|Andada|Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="css/style.css">
+
+
+        <script src="js/vendor/modernizr-2.6.2.min.js"></script>
+    </head>
+    <body>
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+
+        <header data-center="background-position:50% -200px;"
+        data-top-bottom="background-position:50% 200px;">
+            <h1>Stuart Pearman</h1>
+            <h2>Designer</h2>
+            <nav data-600="position:absolute;top:552px;background:rgba(255,255,255,1.0);" data-601="position:fixed;top:-40px;background:rgba(255,255,255,0.96);" data-720="position:fixed;top:0px;background-color:#000;">
+                <ul>
+                    <li><a href="#about">About Me</a></li>
+                    <li><a href="#web">Web Work</a></li>
+                    <li><a href="#design">Odd Projects</a></li>
+                    <li><a href="#contact">Contact Me</a></li>
+                </ul>
+            </nav>
+        </header>
+        <section id="about" class='container banner'>
+            <h2>Hi, I'm Stuart.</h2>
+            <p class='bio' ><img src="img/tronstu.jpg" width="200px" class="left"><br>Ever since I was a kid I've always loved building things. My craft has matured since then, but I still haven't lost the joy I get from thinking up new creations. <b>I specialize in front-end web development</b>, but I am always trying to expand my skillset with fresh projects in all imagineable categories.</p>
+
+            <div class='contact'><h4>- Email Me -</h4><p>Stuart Pearman<br>swpearman@gmail.com</p></div>
+            <div class='clearfix'></div>
+        </section>
+        <section id="web" data-400='background-position:90% 100px, 0px 0px;' data-1200='background-position:85% 0px, 0px 0px;'>
+            <div class='container banner'>
+                <h2>Web Work</h2>
+                <p>The day I wrote my first snippet of HTML was the day I started to think about a future in web design. A few weeks later I started to realize that it may not be so far off. Here are a few things I've made in my short time as a web designer.</p>
+            </div>
+            <ul class="portfolio-list container" id="websites">
+                <li>
+                    <div class='img-hover'><img src="img/element84.png" width="640px"><a href='http://www.element84.com'><input type='button' value='Visit Site'></a></div>
+                        <h3>Element 84</h3>
+                        <p>Site redesign and blog migration for Element 84, Inc.</p>
+                </li>
+                <li>
+                    <div class='img-hover'><img src="img/iamflix.png" width="640px"><a href='http://www.iamflix.com'><input type='button' value='Visit Site'></a></div>
+                        <h3>IAMFlix</h3>
+                        <p>Lead design for family friendly streaming service. Worked extensively in Ruby on Rails with a team of developers at Element 84, Inc.</p>
+                </li>
+            </ul>
+        </section>
+        <section id="design" data-100='background-position: 0px 0px;' data-5000='background-position: 1000px -1000px;'>
+            <div class='container banner' data-1400='background-position:5% 100px;' data-2500='background-position:15% 30px;'>
+                <h2>Odd Projects</h2>
+                <p>Though most people would refer to me as a web designer, nothing brings me greater joy than seeing my designs manifested in a physical way -- whether it's a business card, a bottle, or even a painting. Designing for other mediums than the web give me a sense of balance that I love.</p>
+            </div>
+                <ul class="portfolio-list layer">
+                    <li class="projectdiv">
+                            <div id="ccoast" class="carousel">
+                                <img src="/img/ccboard3.png"><input type="button" onclick="carouselminus('ccoast', ccboards); return false;" value="<" class="back"><input type="button" onclick="carouselplus('ccoast', ccboards); return false;" value=">" class="next">
+                            </div>
+                            <div class='container'>
+                                <h3>Branding & Board Design - Concrete Coast Boards</h3>
+                                <p>Idea for a skateboard or skate deck graphics company. I have always loved board sports of all kinds and would love to contribute to them.</p>
+                            </div>
+                    </li>
+                    <li class="projectdiv">
+                            <div id="stubrew" class="carousel">
+                                <img src="/img/stubrewbottlefront.jpg"><input type="button" onclick="carouselminus('stubrew', stubrew); return false;" value="<" class="back"><input type="button" onclick="carouselplus('stubrew', stubrew); return false;" value=">" class="next">
+                            </div>
+                            <div class='container'>
+                                <h3>Packaging & Label Design - StuBrew</h3>
+                                <p>Concept for a brewing company. Expanded on the brand to include three label designs.</p>
+                            </div>
+                    </li>
+
+                </ul>
+        </section>
+        <footer>
+            <section id="contact" class='container banner'>
+                <h2>Interested In Working With Me?</h2>
+                <p>Write a message below and I'll be sure to get a quick response back to you!</p>
+                <div class="left-col form" class="ltr">
+
+<form id="form1" name="form1" class="wufoo topLabel page" accept-charset="UTF-8" autocomplete="off" enctype="multipart/form-data" method="post" novalidate
+      action="https://stuartpearman.wufoo.com/forms/z1f1xviv107fu3m/#public">
+  
+<div id="header" class="info">
+</div>
+
+<ul>
+<div class='left-col'>
+	<li id="foli3" class="notranslate      ">
+	<label class="desc" id="title3" for="Field3">
+	Name
+	</label>
+	<div>
+	<input id="Field3" name="Field3" type="text" class="field text medium" value="" maxlength="255" tabindex="1" onkeyup="" placeholder='Name' />
+	</div>
+	</li>
+	<li id="foli4" class="notranslate      ">
+		<label class="desc" id="title4" for="Field4">Email</label>
+		<div>
+			<input id="Field4" name="Field4" type="email" spellcheck="false" class="field text medium" value="" maxlength="255" tabindex="2" placeholder='Email' required />
+		</div>
+	</li>
+	</li> 
+	<li class="buttons ">
+		<div>
+			<input id="saveForm" name="saveForm" class="btTxt submit" type="submit" value="Send" />
+		</div>
+	</li>
+</div>
+<div class='right-col'>
+<li id="foli5"
+class="notranslate      "><label class="desc" id="title5" for="Field5">
+Untitled
+</label>
+<div>
+<textarea id="Field5"
+name="Field5"
+class="field textarea medium"
+spellcheck="true"
+rows="10" cols="50"
+
+tabindex="3"
+onkeyup=""
+required
+ ></textarea>
+
+	</div>
+</div>
+
+<li class="hide" hidden='true'>
+<label for="comment">Do Not Fill This Out</label>
+<textarea name="comment" id="comment" rows="1" cols="1"></textarea>
+<input type="hidden" id="idstamp" name="idstamp" value="6KcOhIP9hQr8elM2MPTaa91E8wrOoSyNcc48nleQ5yY=" />
+</li>
+</ul>
+</form> 
+
+</div><!--container-->
+
+<a class="powertiny" href="http://www.wufoo.com/" title="Powered by Wufoo"
+style="display:none !important;visibility:visible !important;text-indent:0 !important;position:relative !important;height:auto !important;width:95px !important;overflow:visible !important;text-decoration:none;cursor:pointer !important;margin:0 auto !important">
+<span style="background:url(./images/powerlogo.png) no-repeat center 7px; margin:0 auto;display:inline-block !important;visibility:visible !important;text-indent:-9000px !important;position:static !important;overflow: auto !important;width:62px !important;height:30px !important">Wufoo</span>
+<b style="display:block !important;visibility:visible !important;text-indent:0 !important;position:static !important;height:auto !important;width:auto !important;overflow: auto !important;font-weight:normal;font-size:9px;color:#777;padding:0 0 0 3px;">Designed</b>
+</a>
+
+                <div class='info right-col'>
+                    <p>Stuart Pearman<br/><a>swpearman@gmail.com</a></p>
+                    <ul>
+                        <li class='icon'><a href="http://facebook.com/stuart.pearman/" target='blank'><img src="/img/facebook.png"></a></li>
+                        <li class='icon'><a href="https://www.linkedin.com/profile/view?id=307398840&trk=nav_responsive_tab_profile"><img src="/img/linkedin.png"></a></li>
+                        <li class='icon'><a href="https://dribbble.com/stuartpearman"><img src="/img/dribbble.png"></a></li>
+                        <li class='icon'><a href="https://github.com/pearmans"><img src="/img/github.png"></a></li>
+                    </ul>
+                </div>
+            </section>
+        </footer>
+
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.0.min.js"><\/script>')</script>
+
+        <script src="js/plugins.js"></script>
+        <script src="js/main.js"></script>
+
+        <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+        <script>
+            (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+            function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+            e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+            e.src='//www.google-analytics.com/analytics.js';
+            r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+            ga('create','UA-XXXXX-X');ga('send','pageview');
+        </script>
+        <script type="text/javascript" src="/js/vendor/skrollr.min.js"></script>
+        <script type="text/javascript">
+        $(function () {
+          if ($(window).width() > 767) {
+            skrollr.init({forceHeight:false});
+          }
+          $(window).on('resize', function () {
+            if ($(window).width() <= 767) {
+              skrollr.init().destroy();
+              $.mobile.defaultHomeScroll = 0;
+            } else {
+                skrollr.init({forceHeight:false});
+            }
+          });
+        });
+        </script>
+    </body>
+</html>

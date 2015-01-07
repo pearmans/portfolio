@@ -1,0 +1,57 @@
+---
+---
+
+{% include header.html %}
+        <section id="about" class='container banner'>
+            <h2>Hi, I'm Stuart.</h2>
+            <p class='bio' ><img src="img/tronstu.jpg" width="200px" class="left"><br>Ever since I was a kid I've always loved building things. My craft has matured since then, but I still haven't lost the joy I get from thinking up new creations. <b>I specialize in front-end web development</b>, but I am always trying to expand my skillset with fresh projects in all imagineable categories.</p>
+
+            <div class='contact'><h4>- Email Me -</h4><p>Stuart Pearman<br>swpearman@gmail.com</p></div>
+            <div class='clearfix'></div>
+        </section>
+        <section id="web" data-400='background-position:90% 100px, 0px 0px;' data-1200='background-position:85% 0px, 0px 0px;'>
+            <div class='container banner'>
+                <h2>Web Work</h2>
+                <p>The day I wrote my first snippet of HTML was the day I started to think about a future in web design. A few weeks later I started to realize that it may not be so far off. Here are a few things I've made in my short time as a web designer.</p>
+            </div>
+            <ul class="portfolio-list container" id="websites">
+                <li>
+                    <div class='img-hover'><img src="img/element84.png" width="640px"><a href='http://www.element84.com'><input type='button' value='Visit Site'></a></div>
+                        <h3>Element 84</h3>
+                        <p>Site redesign and blog migration for Element 84, Inc.</p>
+                </li>
+                <li>
+                    <div class='img-hover'><img src="img/iamflix.png" width="640px"><a href='http://www.iamflix.com'><input type='button' value='Visit Site'></a></div>
+                        <h3>IAMFlix</h3>
+                        <p>Lead design for family friendly streaming service. Worked extensively in Ruby on Rails with a team of developers at Element 84, Inc.</p>
+                </li>
+            </ul>
+        </section>
+        <section id="design" data-100='background-position: 0px 0px;' data-5000='background-position: 1000px -1000px;'>
+            <div class='container banner' data-1400='background-position:5% 100px;' data-2500='background-position:15% 30px;'>
+                <h2>Odd Projects</h2>
+                <p>Though most people would refer to me as a web designer, nothing brings me greater joy than seeing my designs manifested in a physical way -- whether it's a business card, a bottle, or even a painting. Designing for other mediums than the web give me a sense of balance that I love.</p>
+            </div>
+                <ul class="portfolio-list layer">
+                    <li class="projectdiv">
+                            <div id="ccoast" class="carousel">
+                                <img src="/img/ccboard3.png"><input type="button" onclick="carouselminus('ccoast', ccboards); return false;" value="<" class="back"><input type="button" onclick="carouselplus('ccoast', ccboards); return false;" value=">" class="next">
+                            </div>
+                            <div class='container'>
+                                <h3>Branding & Board Design - Concrete Coast Boards</h3>
+                                <p>Idea for a skateboard or skate deck graphics company. I have always loved board sports of all kinds and would love to contribute to them.</p>
+                            </div>
+                    </li>
+                    <li class="projectdiv">
+                            <div id="stubrew" class="carousel">
+                                <img src="/img/stubrewbottlefront.jpg"><input type="button" onclick="carouselminus('stubrew', stubrew); return false;" value="<" class="back"><input type="button" onclick="carouselplus('stubrew', stubrew); return false;" value=">" class="next">
+                            </div>
+                            <div class='container'>
+                                <h3>Packaging & Label Design - StuBrew</h3>
+                                <p>Concept for a brewing company. Expanded on the brand to include three label designs.</p>
+                            </div>
+                    </li>
+
+                </ul>
+        </section>
+{% include footer.html %}

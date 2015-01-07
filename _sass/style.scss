@@ -1,0 +1,444 @@
+@import "base";
+
+$nav-padding: calc(10% - 12px);
+$img-bs: 0 0 10px 0 #ccc;;
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+h2, h3, h4 {
+    text-align: left;
+}
+
+br {
+    height: 1em;
+    line-height: 1em;
+}
+
+header, section {
+    margin: 0;
+    overflow: hidden;
+}
+
+header {
+    background: url(/img/banner1.jpg);
+    background-size: 1450px;
+    padding: 400px 10% 60px 10%;
+    box-shadow: 0px -20px 120px 40px #000 inset;
+    height: 130px;
+
+    h1 {
+        margin-bottom: 0.1em;
+        line-height: 1em;
+        color: #fff;
+        display: none;
+    }
+
+    h2 {
+        font-size: 1.5em;
+        margin: 0;
+        border: none;
+        line-height: 1em;
+        color: #fff;
+        display: none;
+    }
+}
+
+nav {
+    background: #fff;
+    overflow: hidden;
+    left: 0;
+    right: 0;
+    padding: 0 $nav-padding;
+    border-bottom: 1px solid #bbb;
+    z-index: 1;
+    position:absolute;
+    top:552px;
+    font-family: 'Quicksand', sans-serif;
+    
+    ul {
+        margin: 0;
+        margin-top: 0.5em;
+        padding: 0;
+        text-align: center;
+    }
+
+    li {
+        display: inline-block;
+        padding: 12px 28px 0px 28px;
+        margin-top: -10px;
+        margin-bottom: 2px;
+    }
+
+    li:hover {
+        border-bottom: 2px solid #000;
+        margin-bottom: 0px;
+        a {
+            
+        }
+    }
+
+    a, a:visited {
+        text-decoration: none;
+        color: #222;
+    }
+
+    a:hover {
+
+    }
+}
+
+section {
+    padding: 0;
+    border-top: 1px solid #ccc;
+
+}
+
+.container.banner {
+    padding-top: 2em;
+    padding-bottom: 1em;
+}
+
+.portfolio-list {
+    padding-top: 3em;
+    margin-bottom: 0;
+
+
+    &.layer {
+        background: rgba(0,0,0,0.5);
+        overflow: hidden;
+    }
+
+    li {
+        border-top: 1px dashed #888;
+
+        &:nth-child(1) {
+            border: none;
+        }
+
+        .caption {
+            position:relative;
+            color: #fff;
+            opacity: 0;
+            transition: all 0.5s;
+        }
+
+        &:hover {
+            .caption {
+                opacity: 1;
+            }
+        }
+    }
+}
+
+//------------- ABOUT ME ----------------//
+
+#about {
+    background: url(/img/paper.png);
+    img {
+        margin-top: 1em;
+        margin-bottom: 0.5em; 
+        border: 2px solid #333;
+        border-radius: 200px;
+    }
+    h2 {
+        border-color:rgba(0,0,0,0.15);
+    }
+    .contact {
+        border: 1px dashed #999;
+        text-align: center;
+        display: block;
+        width: 400px;
+        margin: 40px auto;
+        padding: 20px 0;
+
+        p {
+            margin: 0;
+            padding: 0;
+            font-size: 0.95em;
+            font-weight: 400;
+        }
+        h4 {
+            text-align: center;
+            margin:0;
+        }
+    }
+}
+
+//------------- WEB WORK ----------------//
+
+#web {
+    padding-bottom: 0;
+    background: url(/img/butterfly.png) no-repeat #3383A0;
+    color: #fff;
+    .banner {
+        border-bottom: 1px dashed rgba(255,255,255,0.7);
+    }
+}
+
+#websites {
+    img {
+        width: 100%;
+        margin: 1em 0 0.5em 0;
+        border: 3px solid #fff;
+        border-radius: 12px;
+    }
+    padding-bottom: 1em;
+}
+
+.img-hover {
+    text-align: center;
+
+    input {
+        opacity: 0;
+        padding: 1em;
+        border: 1px solid #555;
+        border-radius: 12px;
+        background: rgba(255,255,255,0.8);
+        font-size: 1em;
+        margin: -100px auto;
+        position: relative;
+        bottom: 300px;
+        transition: opacity 0.4s;
+
+        &:hover {
+            background: rgba(220,220,220,0.9);
+            cursor: pointer;
+        }
+    }
+
+    &:hover {
+        input {
+            opacity: 1;
+        }
+    }
+}
+
+//------------- ODD PROJECTS ----------------//
+
+#design {
+    background: url(/img/stardust.png) #222;
+    color: #fff;
+    padding: 0;
+
+    .container.banner {
+        background: url(/img/astronaut.png) no-repeat;
+        overflow: auto;
+        margin-bottom: -1em;
+    }
+
+    li {
+        padding-bottom: 2em;
+    }
+}
+
+.carousel {
+    text-align: center;
+    width: 100%;
+    overflow: hidden;
+    padding-bottom: 2.5em;
+    padding-top: 2em;
+
+
+    img {
+        background: #fff;
+        height: 500px;
+        margin: 1em;
+        transition: all 0.5s;
+        border-radius: 4px;
+    }
+
+    input {
+        width: 2em;
+        height: 2em;
+        padding: 0.35em 0;
+        border: 1px solid #000;
+        font-size: 1.6em;
+        text-align: center;
+        background: rgba(255,255,255,0.5);
+        color: #000;
+        position: absolute;
+        margin-top: 25%;
+        &:hover {
+            color: #eee;
+            border: 1px solid #eee;
+            background: rgba(0,140,140,0.8);
+
+            &.back {
+                border-left: 0;
+            }
+            &.next {
+                border-right: 0;
+            }
+        }
+        &:focus {
+            outline: 0;
+        }
+        &.back {
+            border-left: 0;
+            left: 0;
+            float: left;
+        }
+        &.next {
+            border-right: 0;
+            right: 0;
+            float: right;
+        }
+
+    }
+}
+
+//------------- CONTACT ME ----------------//
+
+
+#contact {
+    background: #000;
+    border: none;
+    color: #fff;
+}
+
+.icon {
+    width: 40px;
+    display: inline-block;
+    position: relative;
+    margin-right: 8px;
+    margin-bottom: 0.5em;
+
+    img {
+        width: 100%;
+        border-radius: 30px;
+    }
+
+    &:hover {
+        bottom: 1px;
+        left: 1px;
+    }
+}
+
+form {
+
+    width: 100%;
+    margin-right: 3.3%;
+
+    label {
+        display: none;
+    }
+
+    input.field {
+        background: none;
+        border: none;
+        border-bottom: 1px solid #fff;
+    } 
+
+    textarea {
+        height: 200px;
+        background: #eee;
+        border: 1px solid #fff;
+        padding: 6px;
+        font-size: 1em;
+        width: 100%;
+        box-sizing: border-box;
+    }
+}
+
+.left-col {
+    box-sizing: border-box;
+    display: inline-block;
+    float: left;
+    &.form {
+        width: 66.7%;
+    }
+}
+
+.right-col {
+    box-sizing:border-box;
+    display: inline-block;
+    float: right;
+}
+
+
+form .left-col {
+    width: 30%;
+    margin-right: 3.3%;
+
+    li {
+        padding: 4px 0;
+    }
+
+    input {
+        font-size: 1em;
+    }
+
+    input.field {
+        box-sizing: border-box;
+        width: 100%;
+        color: #fff;
+        text-align: right;
+        &:focus {
+            outline: 0;
+        }
+    }
+
+    .buttons input {
+        float: right;
+        padding: 0.5em 1em;
+        background: #fff;
+        border: none;
+        border-radius: 6px;
+        margin-top: 8px;
+    }
+}
+.info.right-col {
+    height: 200px;
+    width: 31.65%;
+    padding-left: 1.65%;
+    margin-left: 1.65%;
+    margin-top: 1em;
+    border-left: 1px dashed #fff;
+    font-size: 0.8em;
+    ul {
+        padding-top: 2em;
+            border-top: 1px solid #fff;
+    }
+}
+
+form .right-col {
+    width: 66.4%;
+}
+
+.container {
+    padding-left: 12%;
+    padding-right: 12%;
+}
+
+div.container {
+    padding: 0 12%;
+    margin: 0;
+}
+
+
+
+
+
+
+
+
+
+/* ==========================================================================
+   Media Queries
+   ========================================================================== */
+
+@import "mobile";
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+@import "helper";
+
+/* ==========================================================================
+   Print styles
+   ========================================================================== */
+
+@import "print";
